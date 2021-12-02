@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Para que la imagen pille todo el fondo */ /* Posible Error */
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url(/recursos/fondopantalla.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Grid del escritorio */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
