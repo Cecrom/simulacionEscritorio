@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-/* Para que la imagen pille todo el fondo */ /* Posible Error */
+/* Para que la imagen pille todo el fondo */
+/* Posible Error */
 
-html, body{
+html, body {
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     background-image: url(/recursos/fondopantalla.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -19,6 +20,50 @@ body{
     /* Grid del escritorio */
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto 4rem;
+}
+
+footer {
+    display: flex;
+    grid-column: 1/11;
+    grid-row: 10/11;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3b77BC;
+    border: outset 0.2rem #3569a5;
+}
+
+#f_botoninicio {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem;
+    height: 90%;
+    width: 7rem;
+    background-color: #81C046;
+    border: outset 0.2rem #79b144;
+}
+
+.f_iconoinicio{
+    flex-grow: 1;
+    width: 25%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.f_iniciotexto{
+    flex-grow: 3;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.f_barraTareas {}
+
+.f_fecha {
+    margin: 0.2rem;
+    width: 10rem;
+    height: 90%;
+    background-color: #4989d1;
+    border: outset 0.2rem #3b689b;
 }
