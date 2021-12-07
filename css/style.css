@@ -6,13 +6,15 @@
 /* Para que la imagen pille todo el fondo */
 /* Posible Error */
 
+/* Generales */
+
 html, body {
     width: 100%;
     height: 100%;
 }
 
 body {
-    background-image: url(/recursos/fondopantalla.jpg);
+    background-image: url(../recursos/fondopantalla.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,9 +22,46 @@ body {
     /* Grid del escritorio */
 
     display: grid;
+    justify-items: stretch;
+    align-items: stretch;
     grid-template-columns: 1fr 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto 4rem;
 }
+
+/* Iconos Escritorio */
+
+.icono {
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+.icono img{
+    width: 4rem;
+    height: 4rem;
+}
+
+#b_internet {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#b_juego {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#b_archivos {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#b_papelera {
+    grid-column: 10/11;
+    grid-row: 1/2;
+}
+
+/* Barra herramientas */
 
 footer {
     display: flex;
@@ -35,6 +74,7 @@ footer {
 }
 
 #f_botoninicio {
+    flex-grow: 1;
     display: flex;
     align-items: center;
     margin: 0.3rem;
@@ -44,26 +84,36 @@ footer {
     border: outset 0.2rem #79b144;
 }
 
-.f_iconoinicio{
+.f_iconoinicio {
     flex-grow: 1;
     width: 25%;
     max-height: 100%;
     object-fit: contain;
 }
 
-.f_iniciotexto{
+.f_iniciotexto {
     flex-grow: 3;
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
 
-.f_barraTareas {}
+.f_barraTareas {
+    flex-grow: 100;
+}
 
-.f_fecha {
-    margin: 0.2rem;
-    width: 10rem;
+#f_fecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5;
     height: 90%;
     background-color: #4989d1;
     border: outset 0.2rem #3b689b;
+}
+
+#f_fecha p {
+    color: white;
+    font-size: larger;
 }

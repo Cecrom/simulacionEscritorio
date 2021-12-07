@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="recursos/iconoxp.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Escritorio</title>
 </head>
+
 <body>
+    <button id="b_internet" class="icono">
+        <img src="recursos/internet.png"></img>
+    </button>
+    <button id="b_juego" class="icono">
+        <img src="recursos/juego.png"></img>
+    </button>
+    <button id="b_archivos" class="icono">
+        <img src="recursos/archivos.png"></img>
+    </button>
+    <button id="b_papelera" class="icono">
+        <img src="recursos/papelera.png"></img>
+    </button>
     <footer>
         <button id="f_botoninicio">
             <img src="recursos/iconoxp.png" class="f_iconoinicio"></img>
             <p class="f_iniciotexto">Inicio</p>
         </button>
         <div class="f_barraTareas"></div>
-        <div class="f_fecha"></div>
+        <div id="f_fecha"></div>
     </footer>
 </body>
 <script src="js/script.js"></script>
+
 </html>
