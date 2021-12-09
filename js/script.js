@@ -3,7 +3,20 @@
 
 // Jquery
 
-$(document).ready(function () { });
+$(document).ready(function () { 
+    /*$("#f_botoninicio").click(function(){
+        $("#menu").hover(function(){
+            $(this).children('div').stop();
+            $(this).children('div').slideDown();
+        }), function(){
+            $(this).children('div').stop();
+            $(this).children('div').slideUp();
+        }
+    })*//*JQuery del menu*/
+
+   
+
+});
 
 // Aplicación
 
