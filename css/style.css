@@ -122,6 +122,26 @@ body {
     margin: 0.1rem;
 }
 
+/*Reproductor de musica*/
+
+#reproductor{
+    /*display: none;*/
+    grid-column: 5/8;
+    grid-row: 2/7;
+    z-index: 99;
+    background-image: url(../recursos/reproductorxp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#reproductor nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 2rem;
+    background-color: #e7ecf142;
+}
+
 /* Barra herramientas */
 
 footer {
@@ -223,6 +243,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 /*Parte de boton de apagado*/
 .iconoff {
     color: white;
@@ -241,6 +262,8 @@ footer {
     width: 2rem;
     height: 2rem;
     margin: 0.5rem 0 0.2rem 15rem;
+    cursor: pointer;
+  
 }
 
 #f_botonapagado {
