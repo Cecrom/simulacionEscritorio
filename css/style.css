@@ -188,7 +188,7 @@ footer {
     position: absolute;
     display: none;
     left: 0;
-    bottom: 5%;
+    bottom: 5.5%;
 }
 
 #cabecera {
@@ -202,7 +202,12 @@ footer {
 
 }
 
-#cabecera img, #cabecera h3 {
+#cabecera img{
+    margin: 0.2rem;
+    border: outset 0.2rem #396eac;
+}
+
+#cabecera h3 {
     margin: 0.2rem;
 }
 
@@ -214,6 +219,13 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.iconmenu ul li:hover{
+    cursor: pointer;
+    background-color: #598bc4;
+    color: white;
 }
 
 .iconmenu div {
@@ -224,13 +236,20 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #3b77BC;
-}
-
-#f_botonapagado {
-    padding: 0.5rem 0.5rem 0.5rem 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+#f_botonapagado {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#f_botonapagado:hover{
+    background-color: #3267a3;
 }
 
 #f_botonapagado div {
