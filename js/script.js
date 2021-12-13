@@ -1,5 +1,9 @@
 // Variables
 
+var cancion1 = new cancion("Dile que la quiero", "David Civera", "2:57", "../recursos/cancion1.mp3/");
+var cancion2 = new cancion("Carolina", "M-Clan", "4:23", "../recursos/cancion2.mp3/");
+var cancion3 = new cancion("Link Park", "Numb", "3:06", "../recursos/cancion3.mp3/");
+var canciones = [cancion1, cancion2, cancion3];
 
 // Jquery
 
@@ -34,6 +38,25 @@ $(document).ready(function () {
         $("#menu").toggle();
     });
 
+    $("#listadomusica").ready(function () {
+        for (var i = 0; i < canciones.length; i++) {
+            $("#listadomusica > ul").append("<li><p id = 'cancion" + [i + 1] + "'>" + canciones[i].nombre + " " + canciones[i].artista + " " + canciones[i].duracion + "</p></li>");
+        }
+        $("#cancion1").click(function () {
+            $(".controles").empty();
+            $(".controles").append("<audio controls><source src='../recursos/cancion1.mp3'type='audio/mpeg'></audio>");
+        })
+        $("#cancion2").click(function () {
+            $(".controles").empty();
+            $(".controles").append("<audio controls><source src='../recursos/cancion2.mp3'type='audio/mpeg'></audio>");
+        })
+        $("#cancion3").click(function () {
+            $(".controles").empty();
+            $(".controles").append("<audio controls><source src='../recursos/cancion3.mp3'type='audio/mpeg'></audio>");
+        })
+    })
+
+
 });
 
 
@@ -59,14 +82,11 @@ $(document).ready(function () {
     hora();
 })();
 
-//Objeto para lista de canciones
+// Objeto para lista de canciones
+
 function cancion(nombre, artista, duracion, recurso) {
     this.nombre = nombre;
     this.artista = artista;
     this.duracion = duracion;
     this.recurso = recurso;
 }
-
-var cancion1 = new cancion("Dile que la quiero", "David Civera", "2:57", "../recursos/cancion1.mp3/");
-var cancion2 = new cancion("Carolina", "M-Clan", "4:23", "../recursos/cancion2.mp3/");
-var cancion3 = new cancion("Link Park", "Numb", "3:06", "../recursos/cancion3.mp3/");
