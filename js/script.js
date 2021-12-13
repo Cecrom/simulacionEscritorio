@@ -20,25 +20,14 @@ $(document).ready(function () {
     $("#internet > nav > img").click(function () {
         $("#internet").hide();
     })
-    /*$("#f_botoninicio").click(function(){
-        $("#menu").hover(function(){
-            $(this).children('div').stop();
-            $(this).children('div').slideDown();
-        }), function(){
-            $(this).children('div').stop();
-            $(this).children('div').slideUp();
-        }
-    })*//*JQuery del menu*/
 
-
+    $("#f_botoninicio").click(function () {
         $("#menu").toggle();
-        
+    });
 
 });
 //Toggle
-$("#f_botoninicio").click(function(){
-    $("#menu").toggle();
-    });
+
 
 // Aplicación
 
