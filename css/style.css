@@ -32,6 +32,10 @@ body {
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
 
+#reproductor {
+    display: none;
+}
+
 /* Iconos Escritorio */
 
 .icono {
@@ -124,7 +128,7 @@ body {
 
 /*Reproductor de musica*/
 
-#reproductor{
+#reproductor {
     /*display: none;*/
     grid-column: 5/8;
     grid-row: 2/7;
@@ -132,9 +136,10 @@ body {
     background-image: url(../recursos/reproductorxp.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
-#reproductor nav{
+
+#reproductor nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -222,7 +227,7 @@ footer {
 
 }
 
-#cabecera img{
+#cabecera img {
     margin: 0.2rem;
     border: outset 0.2rem #396eac;
 }
@@ -242,7 +247,7 @@ footer {
     padding: 0 0.5rem 0 0.5rem;
 }
 
-.iconmenu ul li:hover{
+.iconmenu ul li:hover {
     cursor: pointer;
     background-color: #598bc4;
     color: white;
@@ -252,44 +257,35 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
 /*Parte de boton de apagado*/
-.iconoff {
-    color: white;
-}
+
 .f_bottommenu {
-    justify-content: center;
-    align-items: center;
-    background-color: #3b77BC;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: #3b77BC;
 }
 
 #f_botonapagado {
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-#f_botonapagado:hover{
-    background-color: #3267a3;
-}
-
-#f_botonapagado div {
-    padding: 0 0.5rem 0 0.5rem;
     color: white;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#f_botonapagado:hover {
+    cursor: pointer;
+    background-color: #3267a3;
 }
 
 #f_botonapagado img {
     width: 2rem;
     height: 2rem;
-    margin: 0.5rem 0 0.2rem 15rem;
-    cursor: pointer;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 #f_botonapagado {

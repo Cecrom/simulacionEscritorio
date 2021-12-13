@@ -21,12 +21,12 @@ $(document).ready(function () {
         $("#internet").hide();
     })
 
-    $("#inicio > ul > li:first-child").on("click", function(){
-        if($("#reproductor").is(":hidden")){
+    $("#inicio > ul > li:first-child").on("click", function () {
+        if ($("#reproductor").is(":hidden")) {
             $("#reproductor").show();
         }
     })
-    $("#reproductor > nav > img").click(function(){
+    $("#reproductor > nav > img").click(function () {
         $("#reproductor").hide();
     })
 
@@ -60,7 +60,7 @@ $(document).ready(function () {
 })();
 
 //Objeto para lista de canciones
-function cancion(nombre, artista, duracion, recurso){
+function cancion(nombre, artista, duracion, recurso) {
     this.nombre = nombre;
     this.artista = artista;
     this.duracion = duracion;
