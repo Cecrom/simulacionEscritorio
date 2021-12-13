@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
 }
-li{
+
+li {
     list-style: none;
 }
+
 /* Para que la imagen pille todo el fondo */
-/* TODO: Posible Error */
+/* TODO: Posible erro */
 
 /* Generales */
 
@@ -73,13 +75,13 @@ body {
     z-index: 99;
 }
 
-#juego iframe{
+#juego iframe {
     border: none;
     width: 100%;
     height: 97.5%;
 }
 
-#juego nav{
+#juego nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -87,7 +89,7 @@ body {
     background-color: #3b77BC;
 }
 
-#juego nav img{
+#juego nav img {
     cursor: pointer;
     margin: 0.1rem;
 }
@@ -101,13 +103,13 @@ body {
     z-index: 99;
 }
 
-#internet iframe{
+#internet iframe {
     border: none;
     width: 100%;
     height: 97.5%;
 }
 
-#internet nav{
+#internet nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -115,7 +117,7 @@ body {
     background-color: #3b77BC;
 }
 
-#internet nav img{
+#internet nav img {
     cursor: pointer;
     margin: 0.1rem;
 }
@@ -178,61 +180,69 @@ footer {
 }
 
 /*Estilo de menu*/
-#menu{
+#menu {
+    display: none;
     grid-column: 1/3;
     grid-row: 9/11;
     justify-self: stretch;
-    width:22rem;
+    width: 22rem;
     height: 13rem;
 
 }
+
 /*Parte usuario*/
-#cabecera h3{
+#cabecera h3 {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-#cabecera{
-    background-color:#3b77BC ;
+
+#cabecera {
+    background-color: #3b77BC;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-#cabecera img{
+
+#cabecera img {
     margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
 
-    /*Listado del menu*/
-#inicio{
+/*Listado del menu*/
+#inicio {
     background-color: white;
 }
 
-.iconmenu ul li{
+.iconmenu ul li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.iconmenu div{
+
+.iconmenu div {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-    /*Parte de boton de apagado*/
-.iconoff{
+/*Parte de boton de apagado*/
+.iconoff {
     color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.iconoff div{
+
+.iconoff div {
     margin-left: 0.4rem;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.iconoff img{
+
+.iconoff img {
     width: 2rem;
     height: 2rem;
-    margin:0.5rem 0 0.2rem 15rem;
+    margin: 0.5rem 0 0.2rem 15rem;
 }
-#f_botonapagado{
+
+#f_botonapagado {
     background-color: #3b77BC;
 }
