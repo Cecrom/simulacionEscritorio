@@ -14,9 +14,14 @@ $(document).ready(function () {
         }
     })*//*JQuery del menu*/
 
-   
+        $("#menu").toggle();
+        
 
 });
+//Toggle
+$("#f_botoninicio").click(function(){
+    $("#menu").toggle();
+    });
 
 // Aplicación
 
