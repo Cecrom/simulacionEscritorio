@@ -8,21 +8,16 @@ var canciones = [cancion1, cancion2, cancion3];
 // Jquery
 
 $(document).ready(function () {
-    $("#b_juego > img").on("click", function () {
+    $("#b_juego > img").on("dblclick", function () {
         if ($("#juego").is(":hidden")) {
             $("#juego").show();
         }
     })
-    $("#juego > nav > img").click(function () {
-        $("#juego").hide();
-    })
-    $("#b_internet  > img").on("click", function () {
+
+    $("#b_internet  > img").on("dblclick", function () {
         if ($("#internet").is(":hidden")) {
             $("#internet").show();
         }
-    })
-    $("#internet > nav > img").click(function () {
-        $("#internet").hide();
     })
 
     $("#inicio > ul > li:first-child").on("click", function () {
@@ -30,8 +25,8 @@ $(document).ready(function () {
             $("#reproductor").show();
         }
     })
-    $("#reproductor > nav > img").click(function () {
-        $("#reproductor").hide();
+    $(".cerrar").click(function () {
+        $(this).parent().hide();
     })
 
     $("#f_botoninicio").click(function () {
