@@ -45,7 +45,7 @@ $(document).ready(function () {
     //Ventana del reproductor
     $("#inicio > ul > li:first-child").on("click", function () {
         if ($("#reproductor").is(":hidden")) {
-            $("#reproductor").show();
+            $("#reproductor").css("display", "grid");
         }
     })
     $(".cerrar").click(function () {
