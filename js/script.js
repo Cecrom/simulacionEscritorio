@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     $("#inicio > ul > li:first-child").on("click", function () {
         if ($("#reproductor").is(":hidden")) {
-            $("#reproductor").show();
+            $("#reproductor").css("display", "grid");
         }
     })
     $(".cerrar").click(function () {

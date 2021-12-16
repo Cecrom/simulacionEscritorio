@@ -31,10 +31,6 @@ body {
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
 
-#reproductor {
-    display: none;
-}
-
 /* Iconos Escritorio */
 
 .icono {
@@ -190,7 +186,6 @@ body {
 
     /*Grid */
     position: relative;
-    display: grid;
     justify-items: stretch;
     align-items: stretch;
     grid-template-columns: 2fr 7fr 1fr ;
@@ -396,4 +391,3 @@ footer {
 #f_botonapagado {
     background-color: #3b77BC;
 }
-
