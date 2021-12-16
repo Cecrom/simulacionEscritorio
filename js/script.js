@@ -19,6 +19,16 @@ $(document).ready(function () {
             $("#internet").show();
         }
     })
+    $("#b_archivos  > img").on("dblclick", function () {
+        if ($("#archivos").is(":hidden")) {
+            $("#archivos").css("display","grid");
+        }
+    })
+    $("#b_papelera  > img").on("dblclick", function () {
+        if ($("#papelera").is(":hidden")) {
+            $("#papelera").show();
+        }
+    })
 
     $("#inicio > ul > li:first-child").on("click", function () {
         if ($("#reproductor").is(":hidden")) {
@@ -26,7 +36,7 @@ $(document).ready(function () {
         }
     })
     $(".cerrar").click(function () {
-        $(this).parent().hide();
+        $(this).parent().parent().hide();
     })
 
     $("#f_botoninicio").click(function () {
