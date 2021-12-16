@@ -206,6 +206,7 @@ body {
     width: 1.7rem;
     margin-top: 3%;
     margin-left: 55%;
+    cursor: pointer;
 }
 
 #listadomusica{
@@ -217,6 +218,7 @@ body {
     color: white;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
 }
 .controles{
     grid-column: 2/2;
@@ -249,6 +251,37 @@ audio::-webkit-media-controls-mute-button{
     background-color: white;
     border-radius: 1rem;
     width: 0.5rem;
+}
+
+/*Bloc de notas*/
+#blocnotas {
+    display: none;
+    grid-column: 5/8;
+    grid-row: 2/6;
+    background-image: url(../recursos/blocnotasxp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    
+
+}
+#blocnotas form textarea {
+    margin-top: 20%;
+    width: 90%;
+}
+
+
+#blocnotas nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 1rem;
+
+}
+
+#blocnotas nav img {
+    cursor: pointer;
+    margin: 0.1rem;
 }
 
 
