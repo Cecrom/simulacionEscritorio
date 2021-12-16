@@ -158,6 +158,9 @@ body {
 }
 
 #listadomusica{
+
+    position: relative;
+
     grid-column: 2/2;
     grid-row: 2/2;
     color: white;
@@ -167,11 +170,33 @@ body {
 .controles{
     grid-column: 2/2;
     grid-row: 3/3;
-}
-
-.controles{
     margin-top: 3%;
     width: 4rem;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #5b79b6;
+}
+audio{
+    width: 250px;
+    height: 40px;
+}
+
+audio::-webkit-media-controls-current-time-display{
+    color: white;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: white;
+}
+audio::-webkit-media-controls-play-button{
+   background-color: white;
+   border-radius: 1rem;
+   width: 0.5rem;
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: white;
+    border-radius: 1rem;
+    width: 0.5rem;
 }
 
 
