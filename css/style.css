@@ -136,25 +136,42 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     max-height: 100%;
+
+    /*Grid */
+    position: relative;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 2fr 7fr 1fr ;
+    grid-template-rows: 20% 38% 11%;
 }
 
 #reproductor nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 2rem;
-    background-color: #e7ecf142;
+    grid-column: 3/3;
+    grid-row: 1/2;
 }
 
-.controles{
-    width: 4rem;
+#reproductor nav img{
+    width: 1.7rem;
+    margin-top: 3%;
+    margin-left: 55%;
 }
-
-/* Canciones */
 
 #listadomusica{
+
     position: relative;
 
+    grid-column: 2/2;
+    grid-row: 2/2;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.controles{
+    grid-column: 2/2;
+    grid-row: 3/3;
+    margin-top: 3%;
+    width: 4rem;
 }
 audio::-webkit-media-controls-panel {
     background-color: #5b79b6;
@@ -181,6 +198,7 @@ audio::-webkit-media-controls-mute-button{
     border-radius: 1rem;
     width: 0.5rem;
 }
+
 
 /* Barra herramientas */
 
@@ -326,3 +344,4 @@ footer {
 #f_botonapagado {
     background-color: #3b77BC;
 }
+

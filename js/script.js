@@ -38,9 +38,10 @@ $(document).ready(function () {
         $("#menu").toggle();
     });
 
+    //Añadir objetos de musica
     $("#listadomusica").ready(function () {
         for (var i = 0; i < canciones.length; i++) {
-            $("#listadomusica > ul").append("<li><p id = 'cancion" + [i + 1] + "'>" + canciones[i].nombre + " " + canciones[i].artista + " " + canciones[i].duracion + "</p></li>");
+            $("#listadomusica > ul").append("<li><p id = 'cancion" + [i + 1] + "'>" + canciones[i].nombre + " - " + canciones[i].artista + " " + canciones[i].duracion + "</p></li>");
         }
         $("#cancion1").click(function () {
             $(".controles").empty();
