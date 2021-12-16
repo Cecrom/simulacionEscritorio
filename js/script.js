@@ -11,22 +11,35 @@ $(document).ready(function () {
 
     //Ventana juego
     $("#b_juego > img").on("click", function () {
+
+    $("#b_juego > img").on("dblclick", function () {
+
         if ($("#juego").is(":hidden")) {
             $("#juego").show();
         }
     })
+
     $("#juego > nav > img").click(function () {
         $("#juego").hide();
     })
 
     //Ventana internet
     $("#b_internet  > img").on("click", function () {
+
+    $("#b_internet  > img").on("dblclick", function () {
         if ($("#internet").is(":hidden")) {
             $("#internet").show();
         }
     })
-    $("#internet > nav > img").click(function () {
-        $("#internet").hide();
+    $("#b_archivos  > img").on("dblclick", function () {
+        if ($("#archivos").is(":hidden")) {
+            $("#archivos").css("display","grid");
+        }
+    })
+    $("#b_papelera  > img").on("dblclick", function () {
+        if ($("#papelera").is(":hidden")) {
+            $("#papelera").show();
+        }
     })
 
     //Ventana del reproductor
@@ -35,8 +48,8 @@ $(document).ready(function () {
             $("#reproductor").show();
         }
     })
-    $("#reproductor > nav > img").click(function () {
-        $("#reproductor").hide();
+    $(".cerrar").click(function () {
+        $(this).parent().parent().hide();
     })
 
     //Ventana bloc de notas
