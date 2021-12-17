@@ -39,6 +39,15 @@ $(document).ready(function () {
         $(this).parent().parent().hide();
     })
 
+    $("#inicio > ul > li:last-child").on("click", function () {
+        if ($("#blocnotas").is(":hidden")) {
+            $("#blocnotas").show();
+        }
+    })
+    $("#blocnotas > nav > img").click(function () {
+        $("#blocnotas").hide();
+    })
+
     $("#f_botoninicio").click(function () {
         $("#menu").toggle();
     });
