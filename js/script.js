@@ -4,6 +4,8 @@ var cancion1 = new cancion("Dile que la quiero", "David Civera", "2:57", "../rec
 var cancion2 = new cancion("Carolina", "M-Clan", "4:23", "../recursos/cancion2.mp3/");
 var cancion3 = new cancion("Link Park", "Numb", "3:06", "../recursos/cancion3.mp3/");
 var canciones = [cancion1, cancion2, cancion3];
+const bontonApagado = document.getElementById("f_botonapagado");
+const sonidoApagado = new Audio ("../recursos/sonidoapagado.mp3");
 
 // Jquery
 
@@ -111,3 +113,10 @@ function cancion(nombre, artista, duracion, recurso) {
     this.duracion = duracion;
     this.recurso = recurso;
 }
+
+// Añadir sonido al apagar
+
+bontonApagado.addEventListener("click", function(){
+    sonidoApagado.play();
+    location.href = "https://www.google.es";
+})
