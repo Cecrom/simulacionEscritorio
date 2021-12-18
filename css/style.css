@@ -132,7 +132,7 @@ body {
     justify-items: stretch;
     align-items: stretch;
     grid-template-columns: 1fr 2.9fr;
-    grid-template-rows: 10% 6.5% 83.5%;
+    grid-template-rows: 10% 11% 79%;
 }
 
 #archivos nav {
@@ -141,7 +141,7 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 1.6rem;
+    height: 1.3rem;
     background-color: #e7ecf142;
 }
 
@@ -168,9 +168,23 @@ body {
 
 #papelera {
     display: none;
-    grid-column: 3/10;
-    grid-row: 2/9;
+    grid-column: 3/6;
+    grid-row: 2/8;
     z-index: 2;
+    background-image: url(../recursos/papeleraventana.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 100%;
+}
+
+#papelera nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#papelera nav img {
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
 /*Reproductor de musica*/
