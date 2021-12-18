@@ -278,23 +278,27 @@ audio::-webkit-media-controls-mute-button {
 }
 
 #blocnotas form textarea {
-    margin-top: 20%;
-    width: 90%;
+    resize: vertical;
+    margin-top: 5%;
+    margin-left: 1%;
+    width: 79%;
 }
 
 
 #blocnotas nav {
     display: flex;
     justify-content: flex-end;
-    width: 90%;
-    height: 1rem;
-
+    width: 85%;
+    margin-top: 0.5%;
 }
 
 #blocnotas nav img {
     cursor: pointer;
-    margin: 0.1rem;
+    width: 2.8rem;
+    height: 2.8rem;
 }
+
+
 
 /* Barra herramientas */
 
