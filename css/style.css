@@ -7,9 +7,7 @@ li {
     list-style: none;
 }
 
-/* Para que la imagen pille todo el fondo */
-
-/* Generales */
+/*----------------------Generales----------------------*/
 
 html, body {
     width: 100%;
@@ -31,7 +29,7 @@ body {
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
 
-/* Iconos Escritorio */
+/*----------------------Iconos Escritorio----------------------*/
 
 .icono {
     background: none;
@@ -65,7 +63,7 @@ body {
     grid-row: 1/2;
 }
 
-/* Juego */
+/*----------------------Juego---------------------- */
 
 #juego {
     display: none;
@@ -93,7 +91,7 @@ body {
     margin: 0.1rem;
 }
 
-/* Internet */
+/*----------------------Internet----------------------*/
 
 #internet {
     display: none;
@@ -121,6 +119,7 @@ body {
     margin: 0.1rem;
 }
 
+/*----------------------Explorador de archivos----------------------*/
 #archivos {
     display: none;
     grid-column: 3/6;
@@ -166,6 +165,7 @@ body {
     margin: 0.5rem;
 }
 
+/*----------------------Papelera----------------------*/
 #papelera {
     display: none;
     grid-column: 3/6;
@@ -187,7 +187,7 @@ body {
     height: 1.3rem;
 }
 
-/*Reproductor de musica*/
+/*----------------------Reproductor de musica----------------------*/
 
 #reproductor {
     display: none;
@@ -219,9 +219,7 @@ body {
 }
 
 #listadomusica {
-
     position: relative;
-
     grid-column: 2/2;
     grid-row: 2/2;
     color: white;
@@ -230,21 +228,21 @@ body {
     cursor: pointer;
 }
 
+audio {
+    width: 250px;
+    height: 40px;
+}
+
+/*Controles de audio*/
 .controles {
     grid-column: 2/2;
-    grid-row: 3/3;
+    grid-row: 3/3;       
     margin-top: 7.3%;
     margin-left: 2%;
     width: 4rem;
 }
-
 audio::-webkit-media-controls-panel {
     background-color: #5b79b6;
-}
-
-audio {
-    width: 250px;
-    height: 40px;
 }
 
 audio::-webkit-media-controls-current-time-display {
@@ -267,7 +265,7 @@ audio::-webkit-media-controls-mute-button {
     width: 0.5rem;
 }
 
-/*Bloc de notas*/
+/*----------------------Bloc de notas----------------------*/
 #blocnotas {
     display: none;
     grid-column: 5/8;
@@ -299,9 +297,7 @@ audio::-webkit-media-controls-mute-button {
 }
 
 
-
-/* Barra herramientas */
-
+/*----------------------Barra herramientas----------------------*/
 footer {
     height: 50%;
     align-self: end;
@@ -360,8 +356,7 @@ footer {
     font-size: larger;
 }
 
-/*Estilo de menu*/
-
+/*----------------------Estilo de menu de inicio*----------------------*/
 #menu {
     position: absolute;
     display: none;
@@ -412,7 +407,6 @@ footer {
 }
 
 /*Parte de boton de apagado*/
-
 .f_bottommenu {
     display: flex;
     justify-content: flex-end;
