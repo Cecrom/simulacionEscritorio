@@ -10,6 +10,9 @@ const sonidoApagado = new Audio("../recursos/sonidoapagado.mp3");
 // Jquery
 
 $(document).ready(function () {
+
+    // Abrir ventanas
+
     $("#b_juego > img").on("dblclick", function () {
         if ($("#juego").is(":hidden")) {
             $("#juego").show();
@@ -37,18 +40,20 @@ $(document).ready(function () {
             $("#reproductor").css("display", "grid");
         }
     })
-    $(".cerrar").click(function () {
-        $(this).parent().parent().hide();
-    })
 
     $("#inicio > ul > li:last-child").on("click", function () {
         if ($("#blocnotas").is(":hidden")) {
             $("#blocnotas").show();
         }
     })
-    $("#blocnotas > nav > img").click(function () {
-        $("#blocnotas").hide();
+
+    // Cerrar ventanas
+
+    $(".cerrar").click(function () {
+        $(this).parent().parent().hide();
     })
+
+    // Abrir y cerrar menú de inicio
 
     $("#f_botoninicio").click(function () {
         $("#menu").toggle();
@@ -61,6 +66,7 @@ $(document).ready(function () {
     })
 
     //Añadir objetos de musica
+    
     $("#listadomusica").ready(function () {
         for (var i = 0; i < canciones.length; i++) {
             $("#listadomusica > ul").append("<li><p id = 'cancion" + [i + 1] + "'>" + canciones[i].nombre + " - " + canciones[i].artista + " " + canciones[i].duracion + "</p></li>");
