@@ -1,8 +1,8 @@
 // Variables
 
-var cancion1 = new cancion("Dile que la quiero", "David Civera", "2:57", "../recursos/cancion1.mp3/");
-var cancion2 = new cancion("Carolina", "M-Clan", "4:23", "../recursos/cancion2.mp3/");
-var cancion3 = new cancion("Link Park", "Numb", "3:06", "../recursos/cancion3.mp3/");
+var cancion1 = new cancion("Dile que la quiero", "David Civera", "2:57", "../recursos/cancion1.mp3");
+var cancion2 = new cancion("Carolina", "M-Clan", "4:23", "recursos/cancion2.mp3");
+var cancion3 = new cancion("Link Park", "Numb", "3:06", "recursos/cancion3.mp3");
 var canciones = [cancion1, cancion2, cancion3];
 const bontonApagado = document.getElementById("f_botonapagado");
 const sonidoApagado = new Audio("../recursos/sonidoapagado.mp3");
@@ -67,15 +67,15 @@ $(document).ready(function () {
         }
         $("#cancion1").click(function () {
             $(".controles").empty();
-            $(".controles").append("<audio controls><source src='../recursos/cancion1.mp3'type='audio/mpeg'></audio>");
+            $(".controles").append("<audio controls><source src='"+cancion1.recurso+"'type='audio/mpeg'></audio>");
         })
         $("#cancion2").click(function () {
             $(".controles").empty();
-            $(".controles").append("<audio controls><source src='../recursos/cancion2.mp3'type='audio/mpeg'></audio>");
+            $(".controles").append("<audio controls><source src='"+cancion2.recurso+"'type='audio/mpeg'></audio>");
         })
         $("#cancion3").click(function () {
             $(".controles").empty();
-            $(".controles").append("<audio controls><source src='../recursos/cancion3.mp3'type='audio/mpeg'></audio>");
+            $(".controles").append("<audio controls><source src='"+cancion3.recurso+"'type='audio/mpeg'></audio>");
         })
     })
 
